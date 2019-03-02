@@ -24,9 +24,9 @@ For this project, the data was [web-scraped](https://github.com/chris10davies/MS
 | Date       | Review date | scraped |date|
 | Rating | Company rating (1-5) |scraped |integer |
 | Review | Text of the review | scraped |string |
-| State | Variable created by pulling it from location  | created |string |
+| State | Variable created by pulling it from location  | created |category |
 | Job Title | Variable created by pulling it from reviewer      | created |string |
-| Employee Status | Variable created by pulling it from reviewer      | created |string |
+| Employee Status | Variable created by pulling it from reviewer      | created |category |
 
 The featured review was repeated on every company review page that was scraped, so duplicates had to be removed.
 ``` python
@@ -41,7 +41,11 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 | Google   | 1329 |
 | Tesla  | 1235 |
 
-If you're interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data, take a look at
+If you're interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data, take a look at the [created_variables.md](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/created_variables.md).
+
+### Employee Status
+
+
 
 ##  ANALYSIS
 ML Models
