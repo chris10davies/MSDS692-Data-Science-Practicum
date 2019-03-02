@@ -10,9 +10,9 @@ The analysis for this project focuses on Google and Tesla. Google, known for its
 
 ### Data Mining
 
-For this project, I [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) Indeed using urlib.request to gather the review data and beautiful soup to parse it.
+For this project, the data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) from Indeed using urlib.request to gather the review data and beautiful soup to parse it.
 
-** Company Review Dataset (web-scraped from Indeed) **
+**Company Review Dataset (web-scraped from Indeed)**
 
 2 separate datasets (Google & Tesla)
 
@@ -28,20 +28,20 @@ For this project, I [web-scraped](https://github.com/chris10davies/MSDS692-Data-
 | Job Title | Variable created by pulling it from reviewer      | created |string |
 | Employee Status | Variable created by pulling it from reviewer      | created |string |
 
-The featured review was repeated on every company review page I scraped, so I removed duplicates.
+The featured review was repeated on every company review page that was scraped, so duplicates had to be removed.
 ``` python
 # Remove featured review that is reapeated on every page
 google_reviews = google_reviews.drop_duplicates(keep='first')
 tesla_reviews = tesla_reviews.drop_duplicates(keep='first')
 ```
-The scraped reviews were saved off to excel to capture the reviews at a point in time.  I chose excel as the format to avoid issues with punctuation in the review text interfering with importing the data for analysis.  The number of rows were low so excel could definitely handle the volume.  
+The scraped reviews were saved off to excel to capture the reviews at a point in time. Excel was chosen as the exported format to avoid issues with punctuation interfering with re-importing the data for analysis.  The number of rows were low so excel could definitely handle the volume.  
 
 | File       |# of rows |
 |:------------- |:-------------|
 | Google   | 1329 |
 | Tesla  | 1235 |
 
-If you're interested in the steps I took to engineer the state, job title, and job status variables from the web-scraped review data, take a look at 
+If you're interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data, take a look at
 
 ##  ANALYSIS
 ML Models
