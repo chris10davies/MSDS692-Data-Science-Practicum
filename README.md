@@ -53,11 +53,17 @@ Google             |  Tesla
 :-------------------------:|:-------------------------:
 ![alt text](images/rating_google.png "rating_google")  |  ![alt text](images/rating_tesla.png "rating_tesla")
 
-##### Clean Text
-At first, the title and review data were combined and cleaned for text analysis. Af
+##### Clean Text/Count Vectorizer/Word Clouds
+At first, the title and review data were combined and cleaned for text analysis. After viewing my results, it was apparent many of the reviews had the title text repeated in the review itself. This skewed the results so I cleaned only the review data for analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
 
 
-cleaned for text analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
+**Google**
+
+Top 10 Word Count            |  Word Cloud
+:-------------------------:|:-------------------------:
+![alt text](images/cv_google_2_gram.png "rating_tesla")|![alt text](images/wc_google_2_gram.png "rating_tesla")
+![alt text](images/cv_google_3_gram.png "rating_tesla")|![alt text](images/wc_google_3_gram.png "rating_tesla")
+![alt text](images/cv_google_4_gram.png "rating_tesla")|![alt text](images/wc_google_4_gram.png "rating_tesla")
 
 Use lists and word clouds
 
