@@ -61,11 +61,20 @@ At first, the title and review data were combined and cleaned for text analysis.
 
 Top 10 Word Count            |  Word Cloud
 :-------------------------:|:-------------------------:
-![alt text](images/cv_google_2_gram.png "rating_tesla")|![alt text](images/wc_google_2_gram.png "rating_tesla")
-![alt text](images/cv_google_3_gram.png "rating_tesla")|![alt text](images/wc_google_3_gram.png "rating_tesla")
-![alt text](images/cv_google_4_gram.png "rating_tesla")|![alt text](images/wc_google_4_gram.png "rating_tesla")
+![alt text](images/cv_google_1_gram.png "cv_1_google")|![alt text](images/wc_google_1_gram.png "wc_1_google")
+![alt text](images/cv_google_2_gram.png "cv_2_google")|![alt text](images/wc_google_2_gram.png "wc_2_google")
+![alt text](images/cv_google_3_gram.png "cv_3_google")|![alt text](images/wc_google_3_gram.png "wc_3_google")
+![alt text](images/cv_google_4_gram.png "cv_4_google")|![alt text](images/wc_google_4_gram.png "wc_4_google")
 
-Use lists and word clouds
+**Tesla**
+
+Top 10 Word Count            |  Word Cloud
+:-------------------------:|:-------------------------:
+![alt text](images/cv_tesla_1_gram.png "cv_1_tesla")|![alt text](images/wc_tesla_1_gram.png "wc_1_tesla")
+![alt text](images/cv_tesla_2_gram.png "cv_1_tesla")|![alt text](images/wd_tesla_2_gram.png "wc_1_tesla")
+![alt text](images/cv_tesla_3_gram.png "cv_3_tesla")|![alt text](images/wc_tesla_3_gram.png "wc_3_tesla")
+![alt text](images/cv_tesla_4_gram.png "cv_4_tesla")|![alt text](images/wc_tesla_4_gram.png "wc_4_tesla")
+
 
 ##  ANALYSIS
 Sentiment ANALYSIS
