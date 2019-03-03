@@ -48,6 +48,14 @@ First, I made a bar plot to see the proportion of reviews from current vs. forme
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
+##### Ratings
+The majority of Google's reviews are rated 5 or 4 and there very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
+
+Google             |  Tesla
+:-------------------------:|:-------------------------:
+![alt text](images/rating_google.png "rating_google")  |  ![alt text](images/rating_tesla.png "rating_tesla")
+
+
 ##  ANALYSIS
 ML Models
 ANOVA/t-tests
