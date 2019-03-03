@@ -6,9 +6,7 @@ The results of a 2018 Monster recruiting survey say filling jobs with qualified 
 
 The analysis for this project focuses on Google and Tesla. Google, known for its impressive organizational culture, receives two million applications a year (Schneider, 2017). While Tesla's mission to help the planet by electrifying cars is attractive to candidates, the company culture has a reputation of being intense, as it drives to fulfill this mission (George, 2018). It will be interesting to if the analysis of each companies reviews reflect their perceived organizational cultures.  
 
-## EDA (EXPLORATORY DATA ANALYSIS)
-
-### Data Mining
+## DATA MINING
 
 For this project, the data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) from Indeed using urlib.request to gather the review data and beautiful soup to parse it.
 
@@ -43,9 +41,12 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 
 If you're interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data, take a look at the [created_variables.md](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/created_variables.md).
 
-### Employee Status
+## EDA (EXPLORATORY DATA ANALYSIS)
 
+##### Employee Status
+First, I made a bar plot to see the proportion of reviews from current vs. former employees.  Tesla had slightly more reviews from current employees while Google had more from former employees.
 
+![alt text](images/bar_emp_status.png "emp_status")
 
 ##  ANALYSIS
 ML Models
