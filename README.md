@@ -39,8 +39,6 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 | Google   | 1329 |
 | Tesla  | 1235 |
 
-If you're interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data, take a look at the [created_variables.md](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/created_variables.md).
-
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ##### Employee Status
@@ -49,20 +47,39 @@ First, I made a bar plot to see the proportion of reviews from current vs. forme
 ![alt text](images/bar_emp_status.png "emp_status")
 
 ##### Ratings
-The majority of Google's reviews are rated 5 or 4 and there very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
+Nex, I took a look at the company review ratings. The majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
 
 Google             |  Tesla
 :-------------------------:|:-------------------------:
 ![alt text](images/rating_google.png "rating_google")  |  ![alt text](images/rating_tesla.png "rating_tesla")
 
+##### Clean Text
+The title and review text was combined to be cleaned for text analysis. The text was tokenized, lemmatized, lowercased, and punctuation and numbers were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
+
+Use lists and word clouds
 
 ##  ANALYSIS
-ML Models
-ANOVA/t-tests
-
+Sentiment ANALYSIS
+LSA/SVD
+pyclustering
+  silloutete
+  kmedoids - top words
+NMF - top words
+LDA - top words
 ## CONCLUSIONS
 
+## EXTRAS
+
+Interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data? Check out [created_variables.md](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/created_variables.md).
+
+Time Series
+
+Geo
+
 ## REFERENCES
+
+Youtube Presentation 
+
 George, P. (2018, December 13). Working at Tesla Means Being in an 'Abusive Relationship' With Elon Musk: Report. Retrieved from https://jalopnik.com/working-at-tesla-means-being-in-an-abusive-relationship-1831072258
 
 Schneider, M. (2017, July 26). Google Gets 2 Million Applications a Year. To Have a Shot, Your Resume Must Pass the '6-Second Test'. Retrieved from https://www.inc.com/michael-schneider/its-harder-to-get-into-google-than-harvard.html
