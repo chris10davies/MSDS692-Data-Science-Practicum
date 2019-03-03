@@ -2,11 +2,11 @@
 #### MSDS692 Data Science Practicum 1
 
 ## PROJECT OVERVIEW
-The results of a 2018 Monster recruiting survey say filling jobs with qualified candidates is more difficult than it was five years ago (Thibodeaux). The survey points to a good economy and an increase in open jobs as the major reasons contributing to difficulties in attracting top talent (Thibodeaux, 2018). The goal of this project is to utilize company reviews web-scraped from Indeed to gain insight on what impacts employee satisfaction and organizational culture.  These key insights could then be adopted to build a better organizational culture and a more effective recruiting process that attracts more quality candidates.
+The results of a 2018 monster.com recruiting survey say filling jobs with qualified candidates is more difficult than it was five years ago (Thibodeaux). The survey points to a good economy and an increase in open jobs as the major contributors to difficulties in attracting top talent (Thibodeaux, 2018). The goal of this project is to utilize company reviews web-scraped from Indeed to gain insight on what impacts employee satisfaction and organizational culture. These key insights could then be adopted to build a better organizational culture and a more effective recruiting process that attracts more quality candidates.
 
-The analysis for this project focuses on Google and Tesla. Google, known for its impressive organizational culture, receives two million applications a year (Schneider, 2017). While Tesla's mission to help the planet by electrifying cars is attractive to candidates, the company culture has a reputation of being intense, as it drives to fulfill this mission (George, 2018). It will be interesting to if the analysis of each companies reviews reflect their perceived organizational cultures.  
+The analysis for this project focuses on Google and Tesla. Google, known for its impressive organizational culture, receives two million applications a year (Schneider, 2017). While Tesla's mission to help the planet by electrifying cars is attractive to candidates, the company culture has a reputation of being intense, as it drives to fulfill this mission (George, 2018). The perceived organizational cultures of each company will be a good measure of the accuracy of this analysis.
 
-## DATA MINING
+## DATA
 
 For this project, the data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) from Indeed using urlib.request to gather the review data and beautiful soup to parse it.
 
@@ -32,7 +32,7 @@ The featured review was repeated on every company review page that was scraped, 
 google_reviews = google_reviews.drop_duplicates(keep='first')
 tesla_reviews = tesla_reviews.drop_duplicates(keep='first')
 ```
-The scraped reviews were saved off to excel to capture the reviews at a point in time. Excel was chosen as the exported format to avoid issues with punctuation interfering with re-importing the data for analysis.  The number of rows were low so excel could definitely handle the volume.  
+The scraped reviews were saved off to excel to capture the reviews at a point in time. Excel was chosen as the exported format to avoid issues with punctuation interfering with re-importing the data for analysis. The number of rows were low so excel could definitely handle the volume.  
 
 | File       |# of rows |
 |:------------- |:-------------|
@@ -42,19 +42,22 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ##### Employee Status
-First, I made a bar plot to see the proportion of reviews from current vs. former employees.  Tesla had slightly more reviews from current employees while Google had more from former employees.
+First, I made a bar plot to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
 ##### Ratings
-Nex, I took a look at the company review ratings. The majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
+Next, I took a look at the company review ratings. The majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
 
 Google             |  Tesla
 :-------------------------:|:-------------------------:
 ![alt text](images/rating_google.png "rating_google")  |  ![alt text](images/rating_tesla.png "rating_tesla")
 
 ##### Clean Text
-The title and review text was combined to be cleaned for text analysis. The text was tokenized, lemmatized, lowercased, and punctuation and numbers were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
+At first, the title and review data were combined and cleaned for text analysis. Af
+
+
+cleaned for text analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
 
 Use lists and word clouds
 
@@ -78,7 +81,7 @@ Geo
 
 ## REFERENCES
 
-Youtube Presentation 
+Youtube Presentation
 
 George, P. (2018, December 13). Working at Tesla Means Being in an 'Abusive Relationship' With Elon Musk: Report. Retrieved from https://jalopnik.com/working-at-tesla-means-being-in-an-abusive-relationship-1831072258
 
