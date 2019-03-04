@@ -44,20 +44,20 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
-#### Employee Status
+### Employee Status
 First, I made a bar plot to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
-#### Ratings
+### Ratings
 Next, I took a look at the company review ratings. The majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
 
 Google             |  Tesla
 :-------------------------:|:-------------------------:
 ![alt text](images/rating_google.png "rating_google")  |  ![alt text](images/rating_tesla.png "rating_tesla")
 
-#### Clean Text/Count Vectorizer/Word Clouds
-At first, the title and review data were combined and cleaned for text analysis. After viewing my results, it was apparent many of the reviews had the title text repeated in the review itself. This skewed the results so I cleaned only the review data for analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
+### Clean Text/Count Vectorizer/Word Clouds
+At first, the title and review data were combined and cleaned for text analysis. After viewing my results, it was apparent many of the reviews had the title text repeated in the review itself. This skewed the results so I cleaned only the review data for analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 1,2,3, and 4 grams for each company.
 
 **Google**
 <table>
