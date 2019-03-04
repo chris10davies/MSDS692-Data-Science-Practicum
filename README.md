@@ -59,7 +59,6 @@ Google             |  Tesla
 ##### Clean Text/Count Vectorizer/Word Clouds
 At first, the title and review data were combined and cleaned for text analysis. After viewing my results, it was apparent many of the reviews had the title text repeated in the review itself. This skewed the results so I cleaned only the review data for analysis. The text was tokenized, lemmatized, lowercased, and punctuation, numbers, and stop words were removed. Count vectorizer was used to get the top 10 2,3, and 4 grams for each company.
 
-
 **Google**
 <table>
   <tbody>
@@ -83,27 +82,36 @@ At first, the title and review data were combined and cleaned for text analysis.
       <td align="left"><b>4-gram</b><li>"time want whatev clothe" shows up 607 times</li><li>"whatev time what whatev" shows up 487 times</li><li>"want whatev clothe want" shows up 479 times</li><li>"hard part job try" shows up 393 times</li><li>"hard part job would" shows up 381 times</li><li>"hard part job learn" shows up 370 times</li><li>"hard part job get" shows up 293 times</li><li>"hard part job deal" shows up 287 times</li><li>"change rule us rating" shows up 281 times</li><li>"overall culture company problem" shows up 280 times</li></ul></td>
       <td width="60%"><img src="images/wc_google_4_gram.png"></td>
     </tr>
-
   </tbody>
 </table>
 
-Top 10 Word Count            |  Word Cloud
-:-------------------------:|:-------------------------:
-1-gram<ul><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul>|![alt text](images/wc_google_1_gram.png "wc_1_google")
-![alt text](images/cv_google_2_gram.png "cv_2_google")|![alt text](images/wc_google_2_gram.png "wc_2_google")
-![alt text](images/cv_google_3_gram.png "cv_3_google")|![alt text](images/wc_google_3_gram.png "wc_3_google")
-![alt text](images/cv_google_4_gram.png "cv_4_google")|![alt text](images/wc_google_4_gram.png "wc_4_google")
-
-'Great' is the top Google 1-gram and it's interesting that 'learn' is in the top 10 as well.  2-grams has some interesting results with 'great place', 'great company', and 'great people'.  We can see why 'great' is the top single word. We get some insight that 'free food' matters as it falls into the top 10 for 2-grams. 3 and 4 grams didn't seem to provide much insight as the occurrences were relatively low.  
+'Great' is the top Google 1-gram and it's interesting that 'learn' is in the top 10 as well.  2-grams has some interesting results with 'great place', 'great company', and 'great people'.  We can see why 'great' is the top single word. We get some insight that 'free food' matters as it falls into the top 10 for 2-grams. 3 and 4 grams didn't seem to provide much insight as the occurrences were relatively low.
 
 **Tesla**
-
-Top 10 Word Count            |  Word Cloud
-:-------------------------:|:-------------------------:
-![alt text](images/cv_tesla_1_gram.png "cv_1_tesla")|![alt text](images/wc_tesla_1_gram.png "wc_1_tesla")
-![alt text](images/cv_tesla_2_gram.png "cv_1_tesla")|![alt text](images/wd_tesla_2_gram.png "wc_1_tesla")
-![alt text](images/cv_tesla_3_gram.png "cv_3_tesla")|![alt text](images/wc_tesla_3_gram.png "wc_3_tesla")
-![alt text](images/cv_tesla_4_gram.png "cv_4_tesla")|![alt text](images/wc_tesla_4_gram.png "wc_4_tesla")
+<table>
+  <tbody>
+    <tr>
+      <th align="left">Top 10 Word Count</th>
+      <th align="center">Word Cloud</th>
+    </tr>
+    <tr>
+      <td align="left"><b>1-gram</b><li>"company" shows up 553 times</li><li>"job" shows up 483 times</li><li>"work" shows up 470 times</li><li>"great" shows up 458 times</li><li>"good" shows up 421 times</li><li>"day" shows up 365 times</li><li>"people" shows up 343 times</li><li>"management" shows up 334 times</li><li>"get" shows up 327 times</li><li>"not" shows up 317 times</li></ul></td>
+      <td width="60%"><img src="images/wc_tesla_1_gram.png"></td>
+    </tr>
+    <tr>
+      <td align="left"><b>2-gram</b><li>"part job" shows up 96 times</li><li>"great place" shows up 79 times</li><li>"long hour" shows up 65 times</li><li>"hard part" shows up 64 times</li><li>"fast pace" shows up 60 times</li><li>"typical day" shows up 54 times</li><li>"enjoyable part" shows up 43 times</li><li>"learn lot" shows up 41 times</li><li>"fast paced" shows up 40 times</li><li>"life balance" shows up 39 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_2_gram.png"></td>
+    </tr>
+    <tr>
+      <td align="left"><b>3-gram</b><li>"hard part job" shows up 49 times</li><li>"enjoyable part job" shows up 31 times</li><li>"fast paced environment" shows up 17 times</li><li>"part job work" shows up 8 times</li><li>"get job do" shows up 8 times</li><li>"part job would" shows up 8 times</li><li>"world transition sustainable" shows up 8 times</li><li>"day day week" shows up 7 times</li><li>"hour transition sustainable energy" shows up 7 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_3_gram.png"></td>
+    </tr>
+    <tr>
+      <td align="left"><b>4-gram</b><li>"accelerate world transition sustainable" shows up 6 times</li><li>"hour day day week" shows up 6 times</li><li>"word transition sustainable energy" shows up 6 times</li><li>"hour part job would" shows up 5 times</li><li>"long hour good pay" shows up 4 times</li><li>"hard part job work" shows up 3 times</li><li>"many change happen time" shows up 3 times</li><li>"together get job do" shows up 3 times</li><li>"enjoyable part job work" shows up 3 times</li><li>"hard part job hour" shows up 3 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_4_gram.png"></td>
+    </tr>
+  </tbody>
+</table>
 
 'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
 
