@@ -69,7 +69,7 @@ At first, the title and review data were combined and cleaned for text analysis.
     </tr>
     <tr>
       <td align="left"><b>1-gram</b><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul></td>
-      <td width="40%"><img src="images/wc_google_1_gram.png"></td>
+      <td width="60%"><img src="images/wc_google_1_gram.png"></td>
     </tr>
 
   </tbody>
