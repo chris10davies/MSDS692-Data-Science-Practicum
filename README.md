@@ -66,6 +66,8 @@ Top 10 Word Count            |  Word Cloud
 ![alt text](images/cv_google_3_gram.png "cv_3_google")|![alt text](images/wc_google_3_gram.png "wc_3_google")
 ![alt text](images/cv_google_4_gram.png "cv_4_google")|![alt text](images/wc_google_4_gram.png "wc_4_google")
 
+'Great' is the top Google 1-gram and it's interesting that 'learn' is in the top 10 as well.  2-grams has some interesting results with 'great place', 'great company', and 'great people'.  We can see why 'great' is the top single word. We get some insight that 'free food' matters as it falls into the top 10 for 2-grams. 3 and 4 grams didn't seem to provide much insight as the occurrences were relatively low.  
+
 **Tesla**
 
 Top 10 Word Count            |  Word Cloud
@@ -75,6 +77,7 @@ Top 10 Word Count            |  Word Cloud
 ![alt text](images/cv_tesla_3_gram.png "cv_3_tesla")|![alt text](images/wc_tesla_3_gram.png "wc_3_tesla")
 ![alt text](images/cv_tesla_4_gram.png "cv_4_tesla")|![alt text](images/wc_tesla_4_gram.png "wc_4_tesla")
 
+'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
 
 ##  ANALYSIS
 Sentiment ANALYSIS
