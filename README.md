@@ -28,6 +28,9 @@ For this project, the data was [web-scraped](https://github.com/chris10davies/MS
 
 The featured review was repeated on every company review page that was scraped, so duplicates had to be removed.
 ``` python
+# Code Source:
+# https://gist.github.com/bbass444/273846cfe9bcefb4ec7d6c60b399935e
+
 # Remove featured review that is reapeated on every page
 google_reviews = google_reviews.drop_duplicates(keep='first')
 tesla_reviews = tesla_reviews.drop_duplicates(keep='first')
@@ -80,7 +83,30 @@ Top 10 Word Count            |  Word Cloud
 'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
 
 ##  ANALYSIS
-Sentiment ANALYSIS
+TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up.  For example, 6 reviews for Google were assigned a positive sentiment but the reviewers gave a rating of 1.  
+
+![alt text](images/sa_crosstab_google.png "sa_crosstab_google")
+
+Every rating for both companies has similar issues. I tried to tweak the ranges in following code for better results but always produced discrepancies.
+
+``` python
+# Code source:
+# https://dev.to/rodolfoferro/sentiment-analysis-on-trumpss-tweets-using-python-
+
+def analize_sentiment(Reviews):
+
+    analysis = TextBlob(Reviews)
+    if analysis.sentiment.polarity >= .3:
+        return 1
+    elif analysis.sentiment.polarity < .3 and analysis.sentiment.polarity >= -.3 :
+        return 0
+    else:
+        return -1
+```
+
+I took a closer look at rating 1 positive sentiment reviews:
+> Same as every other tech company now. They will only pay the top people what they want then the rest are left to pick up the pieces. Tesla name carries weight and they know it.''
+
 LSA/SVD
 pyclustering
   silloutete
