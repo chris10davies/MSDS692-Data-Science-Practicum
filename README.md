@@ -120,7 +120,7 @@ TextBlob was used to perform sentiment analysis on the review text, somewhat uns
 
 ![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
 
-Every rating for both companies has similar issues. I tried to tweak the ranges in following code for better results but always produced discrepancies.
+Every rating for both companies has similar issues. Adjustments to the sentiment assignment code was attempted to improve the results, but unfortunately, always resulted in discrepancies.
 
 ``` python
 # Code source:
@@ -137,10 +137,10 @@ def analize_sentiment(Reviews):
         return -1
 ```
 
-I took a closer look at rating 1 positive sentiment reviews:
+Text for rating 1/positive sentiment review:
 > Same as every other tech company now. They will only pay the top people what they want then the rest are left to pick up the pieces. Tesla name carries weight and they know it.
 
-Sounds like negative sentiment to me.  Here is how TextBlob scored it.  
+Sounds like negative sentiment to me! Here is how TextBlob scored it.  
 
 ``` python
 Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, None), (['other'], -0.125, 0.375, None), (['only'], 0.0, 1.0, None), (['top'], 0.5, 0.5, None), (['left'], 0.0, 0.0, None)])
