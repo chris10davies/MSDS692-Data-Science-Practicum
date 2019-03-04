@@ -61,10 +61,42 @@ At first, the title and review data were combined and cleaned for text analysis.
 
 
 **Google**
+<table>
+  <tbody>
+    <tr>
+      <th align="center">Top 10 Word Count</th>
+      <th align="right">Word Cloud</th>
+    </tr>
+    <tr>
+      <td align="left">**1-gram**<ul><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul></td>
+      <td align="right">![alt text](images/wc_google_1_gram.png "wc_1_google")</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td align="center">centered</td>
+      <td align="right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td align="center">are neat</td>
+      <td align="right">$1</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+        </ul>
+      </td>
+      <td align="center">See the list</td>
+      <td align="right">from the first column</td>
+    </tr>
+  </tbody>
+</table>
 
 Top 10 Word Count            |  Word Cloud
 :-------------------------:|:-------------------------:
-**1-gram**<ul><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul>|![alt text](images/wc_google_1_gram.png "wc_1_google")
+1-gram<ul><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul>|![alt text](images/wc_google_1_gram.png "wc_1_google")
 ![alt text](images/cv_google_2_gram.png "cv_2_google")|![alt text](images/wc_google_2_gram.png "wc_2_google")
 ![alt text](images/cv_google_3_gram.png "cv_3_google")|![alt text](images/wc_google_3_gram.png "wc_3_google")
 ![alt text](images/cv_google_4_gram.png "cv_4_google")|![alt text](images/wc_google_4_gram.png "wc_4_google")
