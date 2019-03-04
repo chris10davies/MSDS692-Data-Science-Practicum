@@ -116,6 +116,9 @@ At first, the title and review data were combined and cleaned for text analysis.
 'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
 
 ##  ANALYSIS
+
+### Sentiment Analysis
+
 TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up.  For example, TextBlob gave 17 reviews for Tesla a positive sentiment but the reviewers gave a rating of 1.  
 
 ![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
@@ -147,12 +150,36 @@ Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, 
 ```
 TextBlob give a high polarity and subjectivity score for the word 'top' and does not recognize things like sarcasm. After a conversation with Dr. George, in the future it may be beneficial to train my own sentiment classifier.  
 
-LSA/SVD
+### Term Frequency-Inverse Document Frequency(TF-IDF)
+Two different methods were used to extract topics from the review text.  Both methods needed a TF-IDF vector created from the review terms as input.  
+
+``` python
+# TFIDF - fit/transform
+# min_df=3 ignores terms occuring in less than 3 documents
+#Code from Week 4 Solution - Regis Text Analytics Class - Dr. Nathan George
+
+# Instantiate tfidf vectorizer and fit_transform
+tfidf_vectorizer_google = TfidfVectorizer(min_df=3,ngram_range=(1,1))
+train_tfidf_vectors_google = tfidf_vectorizer_google.fit_transform(cln_review_google)
+
+tfidf_vectorizer_tesla = TfidfVectorizer(min_df=3,ngram_range=(1,1))
+train_tfidf_vectors_tesla = tfidf_vectorizer_tesla.fit_transform(cln_review_tesla)
+```
+
+### Clustering/Kmedoids/Latent Semantic Analysis(LSA)
+
+Two different methods were used to extract topics from the review text.
+
+Latent Semantic Analysiss(LSA)
 pyclustering
   silloutete
   kmedoids - top words
+
+### NMF/LDA
+
 NMF - top words
 LDA - top words
+
 ## CONCLUSIONS
 
 ## EXTRAS
