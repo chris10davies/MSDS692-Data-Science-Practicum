@@ -166,14 +166,42 @@ tfidf_vectorizer_tesla = TfidfVectorizer(min_df=3,ngram_range=(1,1))
 train_tfidf_vectors_tesla = tfidf_vectorizer_tesla.fit_transform(cln_review_tesla)
 ```
 
-### Clustering/Kmedoids/Latent Semantic Analysis(LSA)
+### Clustering/K-medoids/Latent Semantic Analysis(LSA)
 
-Two different methods were used to extract topics from the review text.
+The TF-IDF vector was combined into a dataframe with current employee, former employee, and rating. Sentiment analysis was left off due to the accuracy issues previously explained. Latent Semantic Analysis (LSA) was then used for feature reduction to improve some performance issues. LSA reduced the Google dataset to 150 components that explained 79% of the variance and Tesla to 150 components that explained 84% of the variance.
 
-Latent Semantic Analysiss(LSA)
-pyclustering
-  silloutete
-  kmedoids - top words
+Dr. George recommended using k-medoids as the clustering algorithm because it is know to work better with sparse data. There were not many k-medoid options int Pythons so I went with the pyclustering library.
+
+To get the optimal number of clusters pyclustering's silhouette was utilized. It works a little differently from my understanding of other silhouette methods. Instead of evaluating and the results of the clustering model and then making adjustments, pyclustering silhouette is run first and returns a number for each cluster iteration. The iteration with the highest number is the optimal number of clusters.
+
+**Pyclustering Silhouette Output**
+
+The results of pyclustering's silhouette said the optimal number of clusters for Google is 4 and Tesla is 6. Finally, the pyclustering k-medoids model was run with the optimal number of clusters.
+
+``` python
+# google - Kmedoids - with optimal clusters
+
+# Code source
+# https://github.com/annoviko/pyclustering/blob/master/pyclustering/cluster/ema.py
+# https://github.com/annoviko/pyclustering/issues/366
+# https://codedocs.xyz/annoviko/pyclustering/classpyclustering_1_1cluster_1_1kmedoids_1_1kmedoids.html
+# https://github.com/letiantian/kmedoids
+
+# set random initial medoids
+initial_medoids_google = list(range(0,66))
+
+# create instance of K-Medoids algorithm
+kmedoids_instance_google = kmedoids(google_list, initial_medoids_google)
+
+# run cluster analysis and obtain results
+kmedoids_instance_google.process();
+clusters_google = kmedoids_instance_google.get_clusters()
+medoids_google = kmedoids_instance_google.get_medoids();
+
+print("Amount of clusters - Google:", len(clusters_google));
+for cluster in clusters_google:
+    print("Cluster length:", len(cluster));
+```
 
 ### NMF/LDA
 
