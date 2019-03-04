@@ -120,7 +120,7 @@ TextBlob was used to perform sentiment analysis on the review text, somewhat uns
 
 ![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
 
-Every rating for both companies has similar issues. Adjustments to the sentiment assignment code was attempted to improve the results, but unfortunately, always resulted in discrepancies.
+Every rating for both companies has similar issues. Adjustments to the sentiment assignment code were attempted to improve the results. Unfortunately, each attempt resulted in further discrepancies between rating and sentiment.
 
 ``` python
 # Code source:
@@ -145,7 +145,7 @@ Sounds like negative sentiment to me! Here is how TextBlob scored it.
 ``` python
 Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, None), (['other'], -0.125, 0.375, None), (['only'], 0.0, 1.0, None), (['top'], 0.5, 0.5, None), (['left'], 0.0, 0.0, None)])
 ```
-TextBlob give a high score for the word 'top' and does not recognize things like sarcasm. After a conversation with Dr. George, it the future it may be beneficial to train my own sentiment model.  
+TextBlob give a high polarity and subjectivity score for the word 'top' and does not recognize things like sarcasm. After a conversation with Dr. George, in the future it may be beneficial to train my own sentiment classifier.  
 
 LSA/SVD
 pyclustering
