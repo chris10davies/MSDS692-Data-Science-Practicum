@@ -202,11 +202,15 @@ print("Amount of clusters - Google:", len(clusters_google));
 for cluster in clusters_google:
     print("Cluster length:", len(cluster));
 ```
+The documents under each identified cluster were grouped and a calculation was performed to get the average TF-IDF. This was done to rank the clusters by highest average TF-IDF. Then, for the highest average TF-IDF the top words by word frequency were examined. See the results for the cluster with the highest TF-IDF below.
 
-### NMF/LDA
+The pyclustering library seems to have its challenges with performance and accuracy. For the future, running k-medoids clustering in R, which seems to have more options, may improve results. Also, trying other clustering algorithms like k-means and KNN may prove beneficial.
 
-NMF - top words
-LDA - top words
+### Non-negative matrix factorization (NMF)/Latent Dirichlet Allocation (LDA)
+
+Topic modeling was done using Non-negative matrix factorization (NMF) and Latent Dirichlet Allocation (LDA)
+
+
 
 ## CONCLUSIONS
 
