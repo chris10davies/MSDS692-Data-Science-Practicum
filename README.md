@@ -71,6 +71,18 @@ At first, the title and review data were combined and cleaned for text analysis.
       <td align="left"><b>1-gram</b><li>"great" shows up 607 times</li><li>"job" shows up 487 times</li><li>"work" shows up 479 times</li><li>"good" shows up 393 times</li><li>"people" shows up 381 times</li><li>"company" shows up 370 times</li><li>"learn" shows up 293 times</li><li>"day" shows up 287 times</li><li>"place" shows up 281 times</li><li>"time" shows up 280 times</li></ul></td>
       <td width="60%"><img src="images/wc_google_1_gram.png"></td>
     </tr>
+    <tr>
+      <td align="left"><b>2-gram</b><li>"part job" shows up 116 times</li><li>"great place" shows up 83 times</li><li>"hard part" shows up 82 times</li><li>"typical day" shows up 81 times</li><li>"enjoyable part" shows up 57 times</li><li>"great company" shows up 57 times</li><li>"learn lot" shows up 50 times</li><li>"free food" shows up 49 times</li><li>"great people" shows up 36 times</li><li>"make sure" shows up 34 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_2_gram.png"></td>
+    </tr>
+    <tr>
+      <td align="left"><b>3-gram</b><li>"hard part job" shows up 55 times</li><li>"enjoyable part job" shows up 35 times</li><li>"full time employee" shows up 14 times</li><li>"typical day consist" shows up 13 times</li><li>"get job to" shows up 12 times</li><li>"typical day would" shows up 8 times</li><li>"great company great" shows up 8 times</li><li>"meet new people" shows up 8 times</li><li>"great people great" shows up 7 times</li><li>"learn many thing" shows up 7 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_3_gram.png"></td>
+    </tr>
+    <tr>
+      <td align="left"><b>4-gram</b><li>"time want whatev clothe" shows up 607 times</li><li>"whatev time what whatev" shows up 487 times</li><li>"want whatev clothe want" shows up 479 times</li><li>"hard part job try" shows up 393 times</li><li>"hard part job would" shows up 381 times</li><li>"hard part job learn" shows up 370 times</li><li>"hard part job get" shows up 293 times</li><li>"hard part job deal" shows up 287 times</li><li>"change rule us rating" shows up 281 times</li><li>"overall culture company problem" shows up 280 times</li></ul></td>
+      <td width="60%"><img src="images/wc_google_4_gram.png"></td>
+    </tr>
 
   </tbody>
 </table>
