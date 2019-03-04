@@ -83,9 +83,9 @@ Top 10 Word Count            |  Word Cloud
 'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
 
 ##  ANALYSIS
-TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up.  For example, 6 reviews for Google were assigned a positive sentiment but the reviewers gave a rating of 1.  
+TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up.  For example, TextBlob gave 17 reviews for Tesla a positive sentiment but the reviewers gave a rating of 1.  
 
-![alt text](images/sa_crosstab_google.png "sa_crosstab_google")
+![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
 
 Every rating for both companies has similar issues. I tried to tweak the ranges in following code for better results but always produced discrepancies.
 
@@ -105,7 +105,14 @@ def analize_sentiment(Reviews):
 ```
 
 I took a closer look at rating 1 positive sentiment reviews:
-> Same as every other tech company now. They will only pay the top people what they want then the rest are left to pick up the pieces. Tesla name carries weight and they know it.''
+> Same as every other tech company now. They will only pay the top people what they want then the rest are left to pick up the pieces. Tesla name carries weight and they know it.
+
+Sounds like negative sentiment to me.  Here is how TextBlob scored it.  
+
+``` python
+Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, None), (['other'], -0.125, 0.375, None), (['only'], 0.0, 1.0, None), (['top'], 0.5, 0.5, None), (['left'], 0.0, 0.0, None)])
+```
+TextBlob give a high score for the word 'top' and does not recognize things like sarcasm. After a conversation with Dr. George, it the future it may be beneficial to train my own sentiment model.  
 
 LSA/SVD
 pyclustering
