@@ -211,19 +211,19 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
       <td align="left"><b>NMF 1</b><br>nmf = NMF(n_components=n_components, random_state=1,
       alpha=.1, l1_ratio=.5).fit(train_tfidf_vectors_google)
       </td>
-      <td width="70%"><img src="images/nmf_1_google.png"></td>
+      <td width="85%"><img src="images/nmf_1_google.png"></td>
     </tr>
     <tr>
-      <td align="left"><b>2-gram</b><li>"part job" shows up 96 times</li><li>"great place" shows up 79 times</li><li>"long hour" shows up 65 times</li><li>"hard part" shows up 64 times</li><li>"fast pace" shows up 60 times</li><li>"typical day" shows up 54 times</li><li>"enjoyable part" shows up 43 times</li><li>"learn lot" shows up 41 times</li><li>"fast paced" shows up 40 times</li><li>"life balance" shows up 39 times</li></td>
-      <td width="50%"><img src="images/wc_google_2_gram.png"></td>
+      <td align="left"><b>NMF 1</b><br>nmf = NMF(n_components=n_components, random_state=1,
+      alpha=.1, l1_ratio=.5).fit(train_tfidf_vectors_google)
+      </td>
+      <td width="85%"><img src="images/nmf_1_google.png"></td>
     </tr>
     <tr>
-      <td align="left"><b>3-gram</b><li>"hard part job" shows up 49 times</li><li>"enjoyable part job" shows up 31 times</li><li>"fast paced environment" shows up 17 times</li><li>"part job work" shows up 8 times</li><li>"get job do" shows up 8 times</li><li>"part job would" shows up 8 times</li><li>"world transition sustainable" shows up 8 times</li><li>"day day week" shows up 7 times</li><li>"hour transition sustainable energy" shows up 7 times</li></td>
-      <td width="50%"><img src="images/wc_google_3_gram.png"></td>
-    </tr>
-    <tr>
-      <td align="left"><b>4-gram</b><li>"accelerate world transition sustainable" shows up 6 times</li><li>"hour day day week" shows up 6 times</li><li>"word transition sustainable energy" shows up 6 times</li><li>"hour part job would" shows up 5 times</li><li>"long hour good pay" shows up 4 times</li><li>"hard part job work" shows up 3 times</li><li>"many change happen time" shows up 3 times</li><li>"together get job do" shows up 3 times</li><li>"enjoyable part job work" shows up 3 times</li><li>"hard part job hour" shows up 3 times</li></td>
-      <td width="50%"><img src="images/wc_google_4_gram.png"></td>
+      <td align="left"><b>NMF 1</b><br>nmf = NMF(n_components=n_components, random_state=1,
+      alpha=.1, l1_ratio=.5).fit(train_tfidf_vectors_google)
+      </td>
+      <td width="85%"><img src="images/nmf_1_google.png"></td>
     </tr>
   </tbody>
 </table>
