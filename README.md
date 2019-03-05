@@ -8,7 +8,7 @@ The analysis for this project focuses on Google and Tesla. Google, known for its
 
 ## DATA
 
-For this project, the data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) from Indeed using urlib.request to gather the review data and beautiful soup to parse it.
+The data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/web_scrape.ipynb) from Indeed using urlib.request to gather the review data and beautiful soup to parse it.
 
 **Company Review Dataset (web-scraped from Indeed)**
 
@@ -26,16 +26,6 @@ For this project, the data was [web-scraped](https://github.com/chris10davies/MS
 | Job Title | Variable created by pulling it from reviewer      | created |string |
 | Employee Status | Variable created by pulling it from reviewer      | created |category |
 
-The featured review was repeated on every company review page that was scraped, so duplicates had to be removed.
-``` python
-# Code Source:
-# https://gist.github.com/bbass444/273846cfe9bcefb4ec7d6c60b399935e
-
-# Remove featured review that is reapeated on every page
-google_reviews = google_reviews.drop_duplicates(keep='first')
-tesla_reviews = tesla_reviews.drop_duplicates(keep='first')
-```
-The scraped reviews were saved off to excel to capture the reviews at a point in time. Excel was chosen as the exported format to avoid issues with punctuation interfering with re-importing the data for analysis. The number of rows were low so excel could definitely handle the volume.  
 
 | File       |# of rows |
 |:------------- |:-------------|
@@ -45,7 +35,7 @@ The scraped reviews were saved off to excel to capture the reviews at a point in
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ### Employee Status
-First, I made a bar plot to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
+ A bar plot to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
