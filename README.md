@@ -208,11 +208,10 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
       <th align="center">Topic Results</th>
     </tr>
     <tr>
-      <td align="left"><b>NMF 1</b><br># Fit the NMF model 1 - google n_components = 10 n_top_words = 10
-      nmf = NMF(n_components=n_components, random_state=1,
+      <td align="left"><b>NMF 1</b><br>nmf = NMF(n_components=n_components, random_state=1,
       alpha=.1, l1_ratio=.5).fit(train_tfidf_vectors_google)
       </td>
-      <td width="50%"><img src="images/nmf_1_google.png"></td>
+      <td width="70%"><img src="images/nmf_1_google.png"></td>
     </tr>
     <tr>
       <td align="left"><b>2-gram</b><li>"part job" shows up 96 times</li><li>"great place" shows up 79 times</li><li>"long hour" shows up 65 times</li><li>"hard part" shows up 64 times</li><li>"fast pace" shows up 60 times</li><li>"typical day" shows up 54 times</li><li>"enjoyable part" shows up 43 times</li><li>"learn lot" shows up 41 times</li><li>"fast paced" shows up 40 times</li><li>"life balance" shows up 39 times</li></td>
