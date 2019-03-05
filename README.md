@@ -228,7 +228,7 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 
 lda.fit(train_tfidf_vectors_google)
       </td>
-      <td width="85%"><img src="images/nmf_1_google.png"></td>
+      <td width="85%"><img src="images/lda_google.png"></td>
     </tr>
   </tbody>
 </table>
