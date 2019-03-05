@@ -204,29 +204,29 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 <table>
   <tbody>
     <tr>
-      <th align="left">Model/Parameters</th>
-      <th align="center">Topic Results</th>
+      <th>Model/Parameters</th>
+      <th>Topic Results</th>
     </tr>
     <tr>
-      <td width="15%"><b>NMF 1</b><br>nmf = NMF(n_components=n_components, random_state=1,
+      <td width="15%"><b>NMF 1</b><br><li>nmf = NMF(n_components=n_components, random_state=1,
       alpha=.1, l1_ratio=.5).fit(train_tfidf_vectors_google)
-      </td>
+      </li></td>
       <td width="85%"><img src="images/nmf_1_google.png"></td>
     </tr>
     <tr>
-      <td width="15%"><b>NMF 2</b><br>nmf = NMF(n_components=n_components, random_state=1,
+      <td width="15%"><b>NMF 2</b><br><li>nmf = NMF(n_components=n_components, random_state=1,
           beta_loss='kullback-leibler', solver='mu', max_iter=1000, alpha=.1,
           l1_ratio=.5).fit(train_tfidf_vectors_google)
-      </td>
+      </li></td>
       <td width="85%"><img src="images/nmf_2_google.png"></td>
     </tr>
     <tr>
-      <td width="15%"><b>LDA</b><br>lda = LatentDirichletAllocation(n_components=n_components, max_iter=5,
+      <td width="15%"><b>LDA</b><br><li>lda = LatentDirichletAllocation(n_components=n_components, max_iter=5,
                                 learning_method='online',
                                 learning_offset=50.,
                                 random_state=0)
 
-lda.fit(train_tfidf_vectors_google)
+lda.fit(train_tfidf_vectors_google)</li>
       </td>
       <td width="85%"><img src="images/lda_google.png"></td>
     </tr>
