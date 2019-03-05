@@ -207,7 +207,12 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 | NMF     |![alt text](images/nmf_1_google.png "nmf_google") |
 | LDA | ![alt text](images/lda_google.png "lda_google")
 
+**Tesla**
 
+| Model      | Topics         |
+|:------------- |:-------------|
+| NMF     |![alt text](images/nmf_1_tesla.png "nmf_tesla") |
+| LDA | ![alt text](images/lda_tesla.png "lda_tesla")
 
 ## CONCLUSIONS
 
