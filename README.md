@@ -35,12 +35,12 @@ The data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ### Employee Status
- A bar plot to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
+ A bar plot was utilized to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
 ### Ratings
-Next, I took a look at the company review ratings. The majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
+Visualizing the company review ratings shows the majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
 
 Google             |  Tesla
 :-------------------------:|:-------------------------:
@@ -109,7 +109,7 @@ At first, the title and review data were combined and cleaned for text analysis.
 
 ### Sentiment Analysis
 
-TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up.  For example, TextBlob gave 17 reviews for Tesla a positive sentiment but the reviewers gave a rating of 1.  
+TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up. For example, TextBlob gave 17 reviews for Tesla a positive sentiment but the reviewers gave a rating of 1.  
 
 ![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
 
