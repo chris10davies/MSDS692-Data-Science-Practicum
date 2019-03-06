@@ -64,14 +64,6 @@ At first, the title and review data were combined and cleaned for text analysis.
       <td align="left"><b>2-gram</b><li>"part job" shows up 116 times</li><li>"great place" shows up 83 times</li><li>"hard part" shows up 82 times</li><li>"typical day" shows up 81 times</li><li>"enjoyable part" shows up 57 times</li><li>"great company" shows up 57 times</li><li>"learn lot" shows up 50 times</li><li>"free food" shows up 49 times</li><li>"great people" shows up 36 times</li><li>"make sure" shows up 34 times</li></ul></td>
       <td width="50%"><img src="images/wc_google_2_gram.png"></td>
     </tr>
-    <tr>
-      <td align="left"><b>3-gram</b><li>"hard part job" shows up 55 times</li><li>"enjoyable part job" shows up 35 times</li><li>"full time employee" shows up 14 times</li><li>"typical day consist" shows up 13 times</li><li>"get job to" shows up 12 times</li><li>"typical day would" shows up 8 times</li><li>"great company great" shows up 8 times</li><li>"meet new people" shows up 8 times</li><li>"great people great" shows up 7 times</li><li>"learn many thing" shows up 7 times</li></ul></td>
-      <td width="50%"><img src="images/wc_google_3_gram.png"></td>
-    </tr>
-    <tr>
-      <td align="left"><b>4-gram</b><li>"time want whatev clothe" shows up 607 times</li><li>"whatev time what whatev" shows up 487 times</li><li>"want whatev clothe want" shows up 479 times</li><li>"hard part job try" shows up 393 times</li><li>"hard part job would" shows up 381 times</li><li>"hard part job learn" shows up 370 times</li><li>"hard part job get" shows up 293 times</li><li>"hard part job deal" shows up 287 times</li><li>"change rule us rating" shows up 281 times</li><li>"overall culture company problem" shows up 280 times</li></ul></td>
-      <td width="50%"><img src="images/wc_google_4_gram.png"></td>
-    </tr>
   </tbody>
 </table>
 
@@ -90,15 +82,7 @@ At first, the title and review data were combined and cleaned for text analysis.
     </tr>
     <tr>
       <td align="left"><b>2-gram</b><li>"part job" shows up 96 times</li><li>"great place" shows up 79 times</li><li>"long hour" shows up 65 times</li><li>"hard part" shows up 64 times</li><li>"fast pace" shows up 60 times</li><li>"typical day" shows up 54 times</li><li>"enjoyable part" shows up 43 times</li><li>"learn lot" shows up 41 times</li><li>"fast paced" shows up 40 times</li><li>"life balance" shows up 39 times</li></ul></td>
-      <td width="50%"><img src="images/wc_google_2_gram.png"></td>
-    </tr>
-    <tr>
-      <td align="left"><b>3-gram</b><li>"hard part job" shows up 49 times</li><li>"enjoyable part job" shows up 31 times</li><li>"fast paced environment" shows up 17 times</li><li>"part job work" shows up 8 times</li><li>"get job do" shows up 8 times</li><li>"part job would" shows up 8 times</li><li>"world transition sustainable" shows up 8 times</li><li>"day day week" shows up 7 times</li><li>"hour transition sustainable energy" shows up 7 times</li></ul></td>
-      <td width="50%"><img src="images/wc_google_3_gram.png"></td>
-    </tr>
-    <tr>
-      <td align="left"><b>4-gram</b><li>"accelerate world transition sustainable" shows up 6 times</li><li>"hour day day week" shows up 6 times</li><li>"word transition sustainable energy" shows up 6 times</li><li>"hour part job would" shows up 5 times</li><li>"long hour good pay" shows up 4 times</li><li>"hard part job work" shows up 3 times</li><li>"many change happen time" shows up 3 times</li><li>"together get job do" shows up 3 times</li><li>"enjoyable part job work" shows up 3 times</li><li>"hard part job hour" shows up 3 times</li></ul></td>
-      <td width="50%"><img src="images/wc_google_4_gram.png"></td>
+      <td width="50%"><img src="images/wc_tesla_2_gram.png"></td>
     </tr>
   </tbody>
 </table>
