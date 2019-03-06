@@ -87,7 +87,7 @@ At first, the title and review data were combined and cleaned for text analysis.
   </tbody>
 </table>
 
-'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams, in lower frequencies, showing some are attracted to the companies mission.
+'Company' is the top 1-gram for Tesla but it does not provide much insight on its own. Surprisingly, 'great' and 'good' also place in the 10 1-grams. Seeing 'management' in the 1-gram category makes you wonder what is being said about management.  The 2-grams offer some positive insights, like 'great place' and 'learn lot', and several terms that lean towards the negative like 'long hour', 'fast pace', and life balance (could be positive or negative). 'Sustainable' shows up in the 3 and 4 grams (not shown above), in lower frequencies, showing some are attracted to the companies mission.
 
 ##  ANALYSIS
 
@@ -100,10 +100,6 @@ TextBlob was used to perform sentiment analysis on the review text, somewhat uns
 Every rating for both companies has similar issues. Adjustments to the sentiment assignment code were attempted to improve the results. Unfortunately, each attempt resulted in further discrepancies between rating and sentiment.
 
 ``` python
-# Code source:
-# https://dev.to/rodolfoferro/sentiment-analysis-on-trumpss-tweets-using-python-
-
-def analize_sentiment(Reviews):
 
     analysis = TextBlob(Reviews)
     if analysis.sentiment.polarity >= .3:
@@ -199,14 +195,6 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 | LDA | ![alt text](images/lda_tesla.png "lda_tesla")
 
 ## CONCLUSIONS
-
-## EXTRAS
-
-Interested in the steps taken to engineer the state, job title, and job status variables from the web-scraped review data? Check out [created_variables.md](https://github.com/chris10davies/MSDS692-Data-Science-Practicum/blob/master/created_variables.md).
-
-Time Series
-
-Geo
 
 ## REFERENCES
 
