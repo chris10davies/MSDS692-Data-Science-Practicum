@@ -35,7 +35,7 @@ The data was [web-scraped](https://github.com/chris10davies/MSDS692-Data-Science
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ### Employee Status
- A bar plot was utilized to see the proportion of reviews from current vs. former employees. Tesla had slightly more reviews from current employees while Google had more from former employees.
+ A bar plot was utilized to see the number of reviews from current vs. former employees. Both companies had more reviews submitted from former employees.
 
 ![alt text](images/bar_emp_status.png "emp_status")
 
