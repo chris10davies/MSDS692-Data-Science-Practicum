@@ -213,7 +213,7 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 ## REFERENCES
 
 **Youtube Presentation**
-
+https://youtu.be/0BFaGmPbY_k
 
 George, P. (2018, December 13). Working at Tesla Means Being in an 'Abusive Relationship' With Elon Musk: Report. Retrieved from https://jalopnik.com/working-at-tesla-means-being-in-an-abusive-relationship-1831072258
 
