@@ -2,7 +2,7 @@
 #### MSDS692 Data Science Practicum 1
 
 ## PROJECT OVERVIEW
-The results of a 2018 monster.com recruiting survey say filling jobs with qualified candidates is more difficult than it was five years ago (Thibodeaux). The survey points to a good economy and an increase in open jobs as the major contributors to difficulties in attracting top talent (Thibodeaux, 2018). The goal of this project is to utilize company reviews web-scraped from Indeed to gain insight on what impacts employee satisfaction and organizational culture. These key insights could then be adopted to build a better organizational culture and an effective recruiting process that attracts more quality candidates.
+The results of a 2018 Monster recruiting survey say filling jobs with qualified candidates is more difficult than it was five years ago (Thibodeaux). The survey points to a good economy and an increase in open jobs as the major contributors to difficulties in attracting top talent (Thibodeaux, 2018). The goal of this project is to utilize company reviews web-scraped from Indeed to gain insight on what impacts employee satisfaction and organizational culture. These key insights could then be adopted to build a better organizational culture and an effective recruiting process that attracts more quality candidates.
 
 The analysis for this project focuses on Google and Tesla. Google, known for its impressive organizational culture, receives two million applications a year (Schneider, 2017). While Tesla's mission to help the planet by electrifying cars is attractive to candidates, the company culture has a reputation of being intense, as it drives full throttle towards that mission (George, 2018). The perceived organizational cultures of each company will be a good measure of the accuracy of this analysis.
 
@@ -97,7 +97,7 @@ TextBlob was used to perform sentiment analysis on the review text, somewhat uns
 
 ![alt text](images/sa_crosstab_tesla.png "sa_crosstab_tesla")
 
-Every rating for both companies has similar issues. Adjustments to the sentiment assignment code were attempted to improve the results. Unfortunately, each attempt resulted in further discrepancies between rating and sentiment.
+Many other ratings for both companies has similar issues. Adjustments to the sentiment assignment code were attempted to improve the results. Unfortunately, each attempt resulted in further discrepancies between rating and sentiment.
 
 ``` python
 
@@ -118,7 +118,7 @@ Sounds like negative sentiment to me! Here is how TextBlob scored it.
 ``` python
 Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, None), (['other'], -0.125, 0.375, None), (['only'], 0.0, 1.0, None), (['top'], 0.5, 0.5, None), (['left'], 0.0, 0.0, None)])
 ```
-TextBlob give a high polarity and subjectivity score for the word 'top' and does not recognize things like sarcasm. After a conversation with Dr. George, in the future it may be beneficial to train my own sentiment classifier.  
+TextBlob give a high polarity and subjectivity score for the word 'top' and does not recognize context of the word. After a conversation with Dr. George, in the future it may be beneficial to train my own sentiment classifier.  
 
 ### Term Frequency-Inverse Document Frequency(TF-IDF)
 Two different methods were used to extract topics from the review text.  Both methods needed a TF-IDF vector created from the review terms as input.  
@@ -196,9 +196,24 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 
 ## CONCLUSIONS
 
+* Analysis matched perceived organizational cultures
+
+* Simple Word Counts Impressive
+
+* Semantic analysis – Train Classifier
+
+* K-Medoids clustering a bit of a struggle – More options in R
+
+* Good Results with Topic Modeling
+
+* Additional Stop Words
+
+
+
 ## REFERENCES
 
-Youtube Presentation
+**Youtube Presentation**
+
 
 George, P. (2018, December 13). Working at Tesla Means Being in an 'Abusive Relationship' With Elon Musk: Report. Retrieved from https://jalopnik.com/working-at-tesla-means-being-in-an-abusive-relationship-1831072258
 
